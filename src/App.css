@@ -113,6 +113,9 @@ body.dark-body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow 0 4px 24px rgba(0, 0, 0, 0.15)
 }
 
 /* ========================
@@ -373,8 +376,8 @@ body.dark-body {
 }
 
 .players-table thead tr {
-  background: #f8f9fa;
-  border-bottom: 2px solid var(--gray-200);
+  background: #1a1a1a;
+  border-bottom: 2px solid var(--gold);
 }
 
 .players-table thead tr.dark {
@@ -387,7 +390,7 @@ body.dark-body {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #666;
+  color: white;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -403,7 +406,12 @@ body.dark-body {
 }
 
 .sort-icon {
-  font-size: 12px;
+  font-size: 11px;
+  background: #f5a623;
+  color: #1a1a1a;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-left: 4px;
 }
 
 .sort-icon--none {
@@ -495,7 +503,11 @@ body.dark-body {
 }
 
 .fav-btn.fav-active {
-  color: var(--gold);
+  color: white;
+  background: var(--gold);
+  padding: 4px 6px;
+  border-radius: 6px;
+  font-size: 16px;
 }
 
 .no-results {
@@ -752,3 +764,15 @@ body.dark-body {
   background: var(--gray-400);
   color: white;
 }
+
+.app.dark .stat-card--highlight {
+  background: var(--gold);
+  color: #1a1a1a;
+}
+
+.app.dark .main {
+  background: #1e1e2e;
+}
+
+/* FINAl
+   

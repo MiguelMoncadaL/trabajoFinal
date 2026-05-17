@@ -22,9 +22,7 @@ function PlayerRow({ player, index, onClick, isFavorite, onToggleFavorite, darkM
       <td className="player-name">{player.nombre}</td>
       <td>{player.club}</td>
       <td>
-        <span className={`badge badge--${player.posicion.toLowerCase().replace("á", "a")}`}>
-          {player.posicion}
-        </span>
+        {player.posicion}
       </td>
       <td>{player.pais}</td>
       <td>{player.edad}</td>
