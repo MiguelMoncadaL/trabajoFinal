@@ -1,16 +1,58 @@
-# React + Vite
+# Futbol Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Página web para mostrar información de jugadores de futbol.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Esta es una página que muestra información de algunos jugadores de fútbol, la página cuenta con buscador, opción de poner modo oscuro y modo claro a preferencia del usuario, sistema para agregar jugador favorito, opción de eliminar jugador favorito y mostrar jugadores favoritos en una lista, ordenar la lista por orden ascendente o descendente de goles, asistencias, edad o rating. También se puede organizar alfabéticamente según el nombre
+de los jugadores o nombre del equipo.
 
-## React Compiler
+## Instalación
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+En GitBash usé:
+- npm install
+- npm run dev
 
-## Expanding the ESLint configuration
+## Hooks utilizados y su propósito
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- useState: Usado para guardar información que puede cambiar, lo usé principalmente para guardar el término de búsqueda, si el modo oscuro está activo o no, cuáles jugadores están en favoritos, etc.
+- useEffect: Lo usé más que nada para el tema de la búsqueda, espera una pequeña cantidad de tiempo antes de filtrar resultados, además lo uso cuando el usuario pone modo claro/oscuro y para resetear la página cuando cambia el filtro
+- useMemo: Lo usé para calcular los jugadores filtrados y ordenados, y las estadísticas del panel.
+
+## Estructura del proyecto
+
+- src/
+  - components/
+    - SearchBar.jsx
+    - PlayerTable.jsx
+    - PlayerRow.jsx
+    - Pagination.jsx
+    - StatsPanel.jsx
+    - Modal.jsx
+    - ThemeToggle.jsx
+  - data/
+    - players.js
+  - App.jsx
+  - App.css
+
+## Autor
+
+- Miguel Angel Moncada Lopez
+
+## Deploy
+
+https://proyectofinalpg4.netlify.app
+
+## Tecnologías utilizadas
+
+- React 
+- JavaScript
+- HTML 
+- CSS
+- Git
+- Netlify
+
+## IA Utilizada
+
+- Principalmente Claude, de Anthropic.
+- También usé superficialmente ChatGPT de OpenAI, más que nada para dudas pequeñas sobre conceptos.
